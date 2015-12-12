@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rotation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE0-R8-rcY">
+                                <rect key="frame" x="247" y="550" width="107" height="30"/>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="animationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kp-6s-eUJ"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YfS-ZW-BgY">
+                                <rect key="frame" x="20" y="28" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="dgr-n9-9Nb"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJu-bY-dtw" customClass="ArrowView" customModule="Rotation" customModuleProvider="target">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QD8-M5-6z5"/>
+                                    <constraint firstAttribute="height" constant="100" id="fyP-Es-BIS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-xa-4cp">
+                                <rect key="frame" x="20" y="67" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-IO-Eyv" customClass="FadeLabel" customModule="Rotation" customModuleProvider="target">
+                                <rect key="frame" x="110" y="67" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MJu-bY-dtw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Rw-gn-pSh"/>
+                            <constraint firstItem="ZdF-IO-Eyv" firstAttribute="baseline" secondItem="h2I-xa-4cp" secondAttribute="baseline" id="8x8-gk-nLZ"/>
+                            <constraint firstItem="h2I-xa-4cp" firstAttribute="top" secondItem="YfS-ZW-BgY" secondAttribute="bottom" constant="8" id="9In-E0-ZEo"/>
+                            <constraint firstItem="ZdF-IO-Eyv" firstAttribute="leading" secondItem="h2I-xa-4cp" secondAttribute="trailing" constant="8" id="IMe-Kl-VwT"/>
+                            <constraint firstItem="YfS-ZW-BgY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Mwg-u4-6Gl"/>
+                            <constraint firstItem="MJu-bY-dtw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U5h-vW-nwK"/>
+                            <constraint firstItem="nE0-R8-rcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nC8-1Q-fUO"/>
+                            <constraint firstItem="YfS-ZW-BgY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oJO-uO-Kok"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nE0-R8-rcY" secondAttribute="bottom" constant="20" id="pUq-NF-AG2"/>
+                            <constraint firstItem="h2I-xa-4cp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="saQ-eq-2BD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowView" destination="MJu-bY-dtw" id="SbZ-4F-jx6"/>
+                        <outlet property="clockwiseSwitch" destination="YfS-ZW-BgY" id="RrC-h0-YTq"/>
+                        <outlet property="infoLabel" destination="ZdF-IO-Eyv" id="b05-2v-LV5"/>
+                        <outlet property="startAnimationButton" destination="nE0-R8-rcY" id="6N6-px-vxt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="390"/>
+        </scene>
+    </scenes>
+</document>
