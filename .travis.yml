@@ -1,11 +1,9 @@
 language: objective-c
 
 notifications:
-  email:
-    recipients:
-      - development@berndrabe.de
-    on_success: [always]
-    on_failure: [change]
+  slack:
+    on_success: always
+    on_failure: change
 
 xcode_project: Rotation.xcodeproj
 xcode_scheme: Rotation
