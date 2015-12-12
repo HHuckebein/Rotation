@@ -1,14 +1,9 @@
 language: objective-c
-
 notifications:
   slack:
-    on_success: always
-    on_failure: change
+    secure: xe92DyXrXzRfKIKI2OmP+Ce3UznQ9wUtQ63mE8v64M2/DTzDSsDbYZrGvtv5D0KG8vlTkMg4t5sMwqDMB76j9UfT/errdC83azib0oQxOiqdGchoZx+o3TIzU1hmzgQikY+5zFElXRrQDgnTPdP2KS/Fgmbkl6AkTV43sHWm4Twb4yBG6q+IVZgI04jG0ZQTDhRBc/4zatqM12k5P6dRmNva16mBPtMjX06pVjy2i5JMATYpEE50DZlk7ndSzlEOXJCNEtYuM24XdleBViwT16VX/G3wGCdUAX96NgPPlaTTJAJc7rL9dTA8dUj5UhHTk8Iiilou8H0JzvkkCLG2nWa3/8uu7hPjUBNfH87bG9ufEO9d8fgwMrLaC9DUSsAVcSYq871O6yrwlkdTewq3XVZTommuDmLoerGzMksLDGkd5G3ZcUbqdqL18QGunS0swv+te4aKlR0v5zJD9uO9BDgRXiUvDE8AaIKb308aKAz61Lw1rnBcOaxw3+GERIkwh6mpdpiaD3JvhNN7Y1OKIc+dqFMXDW2L/32UD8VmWD5aD+p1jRuQ3RFSeGU0wI6ofIVUvbn4ww5M6kGV2hk2L7cAlyFwkqTU2/gt6oyfQa3glQg61jBKb9I1Gbmfwhv0b2arEmiXYUB6LNe+NH4g9JDPXdSKGeD8pR1WdSeOJ6o=
 
 xcode_project: Rotation.xcodeproj
 xcode_scheme: Rotation
 osx_image: xcode7.2
-xcode_sdk: iphonesimulator9.2 
-
-
-
+xcode_sdk: iphonesimulator9.2
